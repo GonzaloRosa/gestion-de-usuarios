@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Usuarios</h1>
+
+        <!-- Formulario de usuarios -->
+        <form id="formUsuario">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="telefono" placeholder="Teléfono" required>
+            <input type="password" id="contrasenia" placeholder="Contraseña" required>
+            <button type="submit">Agregar Usuario</button>
+        </form>
+
+        <!-- Tabla de usuarios -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Contraseña</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaUsuarios">
+                <!-- Aquí se agregarán los usuarios dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="usuarios.js"></script>
+</body>
+</html>
